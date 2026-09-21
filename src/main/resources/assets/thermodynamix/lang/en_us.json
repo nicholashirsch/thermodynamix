@@ -1,0 +1,13 @@
+{
+  "itemGroup.thermodynamix": "Example Mod Tab",
+  "block.thermodynamix.example_block": "Example Block",
+  "item.thermodynamix.example_item": "Example Item",
+
+  "thermodynamix.configuration.title": "Thermodynamix Configs",
+  "thermodynamix.configuration.section.thermodynamix.common.toml": "Thermodynamix Configs",
+  "thermodynamix.configuration.section.thermodynamix.common.toml.title": "Thermodynamix Configs",
+  "thermodynamix.configuration.items": "Item List",
+  "thermodynamix.configuration.logDirtBlock": "Log Dirt Block",
+  "thermodynamix.configuration.magicNumberIntroduction": "Magic Number Text",
+  "thermodynamix.configuration.magicNumber": "Magic Number"
+}
