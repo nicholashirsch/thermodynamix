@@ -1,0 +1,1 @@
+Follow one rule, make as few changes as possible to complete each task.
