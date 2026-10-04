@@ -1,5 +1,7 @@
 package thermodynamix.machines;
 
-public class KilnBlockEntity {
+import net.minecraft.world.level.block.entity.BlockEntity;
+
+public class KilnBlockEntity extends BlockEntity {
 
 }
