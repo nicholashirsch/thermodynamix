@@ -1,14 +1,15 @@
 package thermodynamix.core;
 
+import static thermodynamix.core.DeferredRegistry.TEMPERATURE;
+
 import net.minecraft.world.item.ItemStack;
-import thermodynamix.Thermodynamix;
 
 public class Temperature {
 
     public static final float AMBIENT = 300f;
 
     public static float getTemperature(ItemStack stack) {
-        return stack.getOrDefault(Thermodynamix.TEMPERATURE.get(), AMBIENT);
+        return stack.getOrDefault(TEMPERATURE.get(), AMBIENT);
     }
 
     public static String getTemperatureTooltip(ItemStack itemSTack) {

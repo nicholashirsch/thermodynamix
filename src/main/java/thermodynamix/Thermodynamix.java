@@ -1,18 +1,13 @@
 package thermodynamix;
 
 import com.mojang.logging.LogUtils;
-import com.mojang.serialization.Codec;
-import net.minecraft.core.component.DataComponentType;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.codec.ByteBufCodecs;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
+import thermodynamix.core.DeferredRegistry;
 import thermodynamix.core.Temperature;
 
 /**
@@ -28,12 +23,6 @@ public class Thermodynamix {
     /** Reference to the slf4j logger. This is the thing that prints to console during startup. */
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public static final DeferredRegister.DataComponents DATA_COMPONENTS =
-        DeferredRegister.createDataComponents(Registries.DATA_COMPONENT_TYPE, MODID);
-    public static final DeferredHolder<DataComponentType<?>, DataComponentType<Float>> TEMPERATURE =
-        DATA_COMPONENTS.registerComponentType("temperature",
-            builder -> builder.persistent(Codec.FLOAT).networkSynchronized((ByteBufCodecs.FLOAT)));
-
     /**
      * This constructor is called by NeoForge when Minecraft is loading and is what inserts the mod into the game.
      *
@@ -42,7 +31,10 @@ public class Thermodynamix {
      *                        blocks in this mod to the block list".
      */
     public Thermodynamix(IEventBus loadingEventBus) {
-        DATA_COMPONENTS.register(loadingEventBus);
+        DeferredRegistry.BLOCKS.register(loadingEventBus);
+        DeferredRegistry.BLOCK_ENTITIES.register(loadingEventBus);
+        DeferredRegistry.ITEMS.register(loadingEventBus);
+        DeferredRegistry.DATA_COMPONENTS.register(loadingEventBus);
 
         NeoForge.EVENT_BUS.addListener(ItemTooltipEvent.class,
             event -> event.getToolTip()
