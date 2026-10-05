@@ -1,5 +1,6 @@
 {
   "thermodynamix.configuration.title": "Thermodynamix Configs",
   "thermodynamix.configuration.section.thermodynamix.common.toml": "Thermodynamix Configs",
-  "thermodynamix.configuration.section.thermodynamix.common.toml.title": "Thermodynamix Configs"
+  "thermodynamix.configuration.section.thermodynamix.common.toml.title": "Thermodynamix Configs",
+  "block.thermodynamix.kiln": "Kiln"
 }

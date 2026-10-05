@@ -5,9 +5,11 @@ import java.util.function.Supplier;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.codec.ByteBufCodecs;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import thermodynamix.Thermodynamix;
 import thermodynamix.machines.KilnBlock;
@@ -39,8 +41,7 @@ public class DeferredRegistry {
     // ---------------------
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Thermodynamix.MODID);
 
-    public static final Supplier<BlockEntityType<KilnBlockEntity>> KILN_BLOCK_ENTITY =
-        BLOCK_ENTITIES.register("kiln", () -> new BlockEntityType<>(KilnBlockEntity::new, KILN.get()));
+    public static final DeferredItem<BlockItem> KILN_ITEM = ITEMS.registerSimpleBlockItem(KILN);
 
     // --------------------------------
     //   DATA COMPONENTS REGISTRATION

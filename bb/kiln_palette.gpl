@@ -1,0 +1,32 @@
+GIMP Palette
+Name: Kiln (Minecraft)
+Columns: 5
+#
+ 90  58  42	Brick 1
+107  69  50	Brick 2
+124  81  57	Brick 3
+142  94  66	Brick 4
+160 107  75	Brick 5
+ 60  58  48	Steel 1
+ 70  68  58	Steel 2
+ 81  78  66	Steel 3
+ 92  89  75	Steel 4
+103 100  84	Steel 5
+166  90  42	Glow 1
+184 104  47	Glow 2
+201 120  54	Glow 3
+217 138  62	Glow 4
+228 155  76	Glow 5
+168 150 111	Refractory 1
+181 163 124	Refractory 2
+194 176 137	Refractory 3
+207 189 150	Refractory 4
+110  58  36	Rust 1
+125  67  42	Rust 2
+133 138  62	Girder 1
+150 155  71	Girder 2
+ 14  12  11	Soot 1
+ 21  18  16	Soot 2
+ 28  24  22	Soot 3
+ 36  31  28	Soot 4
+ 44  38  34	Soot 5
