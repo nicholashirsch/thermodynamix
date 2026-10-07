@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "thermodynamix:kiln" }
+    "facing=north": { "model": "thermodynamix:kiln", "y": 270 },
+    "facing=east":  { "model": "thermodynamix:kiln" },
+    "facing=south": { "model": "thermodynamix:kiln", "y": 90 },
+    "facing=west":  { "model": "thermodynamix:kiln", "y": 180 }
   }
 }

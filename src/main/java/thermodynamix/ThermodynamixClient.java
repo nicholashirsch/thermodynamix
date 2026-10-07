@@ -8,4 +8,5 @@ import net.neoforged.fml.common.Mod;
  * don't mutate the shared server-side state.
  */
 @Mod(value = Thermodynamix.MODID, dist = Dist.CLIENT)
-public class ThermodynamixClient {}
+public class ThermodynamixClient {
+}
