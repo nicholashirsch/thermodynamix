@@ -47,14 +47,8 @@ public class KilnBlockEntity extends BlockEntity implements ISyncPersistRPCBlock
         super(DeferredRegistry.KILN_BLOCK_ENTITY.get(), position, state);
     }
 
-    // 0 = input, 1 = fuel, 2 = output
-    @Persisted //
-    private final ItemStacksResourceHandler inventory = new ItemStacksResourceHandler(3) {
-        @Override
-        protected void onContentsChanged(int index, ItemStack previousContents) {
-            setChanged();
-        }
-    };
+    @Persisted
+    private final ItemStacksResourceHandler inventory = new KilnInventory();
 
     /**
      * Called when saving to/loading from the disk. Takes data in the FieldManagedStorage instance and syncs it with the
@@ -82,5 +76,32 @@ public class KilnBlockEntity extends BlockEntity implements ISyncPersistRPCBlock
     @Override
     public void preRemoveSideEffects(BlockPos pos, BlockState state) {
         Containers.dropContents(level, pos, inventory.copyToList());
+    }
+
+    /** Custom inventory handler for the Kiln block entity. */
+    private class KilnInventory extends ItemStacksResourceHandler {
+        public KilnInventory() {
+            super(3); // Set how many slots the inventory holds.
+        }
+
+        /**
+         * This is an override of the onContentsChanged() method which does nothing by default but needs to call
+         * setChanged() to avoid inventory changes not being saved.
+         * </p>
+         * As this block has an inventory consider the following chain of events:a player modifies the
+         * inventory and then immediately unload the chunk containing this entity (maybe via pearling). Was the
+         * inventory properly saved?
+         * </p>
+         * It turns out that in this scenario the answer is no because Minecraft doesn't automatically update chunks
+         * just because a block inventory changes. Instead, we have to manually call setChanged() which flags the chunk
+         * as having updated and needing to be saved.
+         * 
+         * @param index            The index of the slot that changed.
+         * @param previousContents The previous contents of the slot before the change.
+         */
+        @Override
+        protected void onContentsChanged(int index, ItemStack previousContents) {
+            setChanged();
+        }
     }
 }
