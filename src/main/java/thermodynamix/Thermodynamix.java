@@ -38,6 +38,7 @@ public class Thermodynamix {
         DeferredRegistry.BLOCK_ENTITIES.register(loadingEventBus);
         DeferredRegistry.ITEMS.register(loadingEventBus);
         DeferredRegistry.DATA_COMPONENTS.register(loadingEventBus);
+        DeferredRegistry.CREATIVE_TABS.register(loadingEventBus);
 
         // Add a listen to the NeoForge event bus. This allows the mod to respond to Vanilla events.
         NeoForge.EVENT_BUS.addListener(ItemTooltipEvent.class,

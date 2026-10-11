@@ -33,7 +33,10 @@ bin/
 .DS_Store
 
 ### Minecraft Modding ###
-run/
+run/*
+!run/config/
+run/config/*
+!run/config/ftbquests/
 !**/src/**/run/
 **/src/generated/**/.cache/
 repo/

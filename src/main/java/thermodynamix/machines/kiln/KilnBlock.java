@@ -1,4 +1,4 @@
-package thermodynamix.machines;
+package thermodynamix.machines.kiln;
 
 import com.lowdragmc.lowdraglib2.gui.factory.BlockUIMenuType;
 import com.lowdragmc.lowdraglib2.gui.ui.ModularUI;

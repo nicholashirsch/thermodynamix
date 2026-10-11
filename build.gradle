@@ -30,6 +30,7 @@ repositories {
     // Add here additional repositories if required by some of the dependencies below.
     maven { url = 'https://api.modrinth.com/maven' }
     maven { url = 'https://maven.firstdark.dev/snapshots' } // LDLib2
+    maven { url = 'https://maven.ftb.dev/releases' } // FTB Quests
 }
 
 base {
@@ -117,6 +118,7 @@ dependencies {
     implementation "com.lowdragmc.ldlib2:ldlib2-neoforge-26.1:26.1.2.41"
     localRuntime "maven.modrinth:jei:iub7wR3J" // 29.43.0.106 neoforge; plain version number resolves to the fabric jar
     localRuntime "maven.modrinth:jade:26.1.11+neoforge"
+    localRuntime "dev.ftb.mods:ftb-quests-neoforge:26.1.2.9"
 
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime

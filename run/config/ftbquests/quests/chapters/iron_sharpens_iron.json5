@@ -1,0 +1,14 @@
+{
+  id: "5E63786CDA402E92",
+  group: "4194277DD8861240",
+  order_index: 0,
+  filename: "iron_sharpens_iron",
+  default_quest_shape: "",
+  default_hide_dependency_lines: false,
+  quests: [
+  ],
+  quest_links: [
+  ],
+  images: [
+  ],
+}

@@ -2,5 +2,9 @@
   "thermodynamix.configuration.title": "Thermodynamix Configs",
   "thermodynamix.configuration.section.thermodynamix.common.toml": "Thermodynamix Configs",
   "thermodynamix.configuration.section.thermodynamix.common.toml.title": "Thermodynamix Configs",
-  "block.thermodynamix.kiln": "Kiln"
+  "itemGroup.thermodynamix": "Thermodynamix",
+  "block.thermodynamix.kiln": "Kiln",
+  "item.thermodynamix.steel_ingot": "Steel Ingot",
+  "item.thermodynamix.blister_steel_ingot": "Blister Steel Ingot",
+  "item.thermodynamix.cast_iron_ingot": "Cast Iron Ingot"
 }
