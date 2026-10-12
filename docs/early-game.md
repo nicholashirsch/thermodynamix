@@ -16,3 +16,7 @@ However this is inefficient and takes forever so the natural question is, can I 
 - Pipe
 
 Higher pressure boilers means steam can travel through more pistons and thus generate more power for machines. The loop of early game is to get better materials to make better engines on repeat till you obtain the turbine. Also add a blast furnace (but slightly different name now that Minecraft already has one) which can be used to make the pig iron fed to the Bessemer converter.
+
+In addition, a few machines will be added. The question being, do I want shaft power? To be honest, not really... I think as such I will keep things simple. Machines will be connected to a piston for power, higher power pistons mean they move faster. Currently this includes:
+- Pump: if connected to two pipes increases pressure, otherwise intakes water, lava, or air
+- Steam hammer: ingot -> plates, ore -> crushed ore

@@ -2,17 +2,10 @@ package thermodynamix.machines.kiln;
 
 import com.lowdragmc.lowdraglib2.gui.factory.BlockUIMenuType;
 import com.lowdragmc.lowdraglib2.gui.ui.ModularUI;
-import com.lowdragmc.lowdraglib2.gui.ui.UI;
-import com.lowdragmc.lowdraglib2.gui.ui.UIElement;
-import com.lowdragmc.lowdraglib2.gui.ui.elements.ItemSlot;
-import com.lowdragmc.lowdraglib2.gui.ui.elements.Label;
-import com.lowdragmc.lowdraglib2.gui.ui.elements.inventory.InventorySlots;
-import com.lowdragmc.lowdraglib2.gui.ui.style.StylesheetManager;
 import com.lowdragmc.lowdraglib2.syncdata.annotation.Persisted;
 import com.lowdragmc.lowdraglib2.syncdata.holder.blockentity.ISyncPersistRPCBlockEntity;
 import com.lowdragmc.lowdraglib2.syncdata.storage.FieldManagedStorage;
 
-import dev.vfyjxf.taffy.style.FlexDirection;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.Containers;
 import net.minecraft.world.item.ItemStack;
@@ -48,7 +41,7 @@ public class KilnBlockEntity extends BlockEntity implements ISyncPersistRPCBlock
     }
 
     @Persisted
-    private final ItemStacksResourceHandler inventory = new KilnInventory();
+    private final KilnInventory inventory = new KilnInventory();
 
     /**
      * Called when saving to/loading from the disk. Takes data in the FieldManagedStorage instance and syncs it with the
@@ -62,15 +55,7 @@ public class KilnBlockEntity extends BlockEntity implements ISyncPersistRPCBlock
     }
 
     public ModularUI createUI(BlockUIMenuType.BlockUIHolder holder) {
-        var root = new UIElement().addChildren(
-                new Label().setText("Kiln"),
-                new UIElement().addChildren(
-                        new ItemSlot().bind(inventory, 0),
-                        new ItemSlot().bind(inventory, 1),
-                        new ItemSlot().bind(inventory, 2)).layout(l -> l.gapAll(2).flexDirection(FlexDirection.ROW)),
-                new InventorySlots()).addClass("panel_bg");
-        return new ModularUI(UI.of(root, StylesheetManager.INSTANCE.getStylesheetSafe(StylesheetManager.MC)),
-                holder.player);
+        return new KilnGui(holder, inventory);
     }
 
     @Override
@@ -79,7 +64,7 @@ public class KilnBlockEntity extends BlockEntity implements ISyncPersistRPCBlock
     }
 
     /** Custom inventory handler for the Kiln block entity. */
-    private class KilnInventory extends ItemStacksResourceHandler {
+    public class KilnInventory extends ItemStacksResourceHandler {
         public KilnInventory() {
             super(3); // Set how many slots the inventory holds.
         }

@@ -1,0 +1,32 @@
+GIMP Palette
+Name: Brick (vanilla-style)
+Columns: 9
+#
+133  63  33	Orange brick 1
+143  69  37	Orange brick 2
+153  76  41	Orange brick 3
+163  83  45	Orange brick 4
+173  90  49	Orange brick 5
+184  97  54	Orange brick 6
+194 104  59	Orange brick 7
+204 112  63	Orange brick 8
+214 120  69	Orange brick 9
+ 76  44  32	Brown brick 1
+ 87  51  37	Brown brick 2
+ 97  58  43	Brown brick 3
+107  65  48	Brown brick 4
+117  73  54	Brown brick 5
+128  81  60	Brown brick 6
+138  89  66	Brown brick 7
+ 76  62  55	Grey clinker 1
+ 87  72  63	Grey clinker 2
+ 97  81  72	Grey clinker 3
+107  91  81	Grey clinker 4
+117 101  90	Grey clinker 5
+128 111  99	Grey clinker 6
+158 128 111	Mortar 1
+168 141 123	Mortar 2
+178 153 135	Mortar 3
+189 166 148	Mortar 4
+199 179 162	Mortar 5
+209 192 176	Mortar 6

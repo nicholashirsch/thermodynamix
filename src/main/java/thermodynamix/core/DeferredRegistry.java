@@ -11,6 +11,8 @@ import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.GlazedTerracottaBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -37,6 +39,13 @@ public class DeferredRegistry {
 
         public static final DeferredBlock<KilnBlock> KILN = BLOCKS.registerBlock("kiln", KilnBlock::new,
                         props -> props.strength(3.5f).requiresCorrectToolForDrops());
+        public static final DeferredBlock<Block> BLAST_BRICKS = BLOCKS.registerBlock("blast_bricks", Block::new,
+                        props -> props.strength(3.5f).requiresCorrectToolForDrops());
+        // ponytail: vanilla GlazedTerracottaBlock = plain block facing the placer; swap for a real class when the
+        // controller gets a block entity.
+        public static final DeferredBlock<Block> BLAST_FURNACE_CONTROLLER = BLOCKS.registerBlock(
+                        "blast_furnace_controller", GlazedTerracottaBlock::new,
+                        props -> props.strength(3.5f).requiresCorrectToolForDrops());
 
         // ---------------------------
         // BLOCK ENTITIES REGISTRATION
@@ -54,6 +63,9 @@ public class DeferredRegistry {
         public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Thermodynamix.MODID);
 
         public static final DeferredItem<BlockItem> KILN_ITEM = ITEMS.registerSimpleBlockItem(KILN);
+        public static final DeferredItem<BlockItem> BLAST_BRICKS_ITEM = ITEMS.registerSimpleBlockItem(BLAST_BRICKS);
+        public static final DeferredItem<BlockItem> BLAST_FURNACE_CONTROLLER_ITEM = ITEMS
+                        .registerSimpleBlockItem(BLAST_FURNACE_CONTROLLER);
         public static final DeferredItem<Item> STEEL_INGOT_ITEM = ITEMS.registerSimpleItem("steel_ingot",
                         props -> props.stacksTo(64));
         public static final DeferredItem<Item> BLISTER_STEEL_INGOT_ITEM = ITEMS.registerSimpleItem(

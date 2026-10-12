@@ -1,0 +1,48 @@
+GIMP Palette
+Name: Furnace controller
+Columns: 15
+#
+ 30  32  31	Steel 1
+ 40  42  41	Steel 2
+ 50  52  51	Steel 3
+ 59  63  61	Steel 4
+ 68  73  71	Steel 5
+ 78  83  81	Steel 6
+ 87  93  91	Steel 7
+ 97 104 101	Steel 8
+106 114 111	Steel 9
+116 124 121	Steel 10
+125 134 131	Steel 11
+135 144 141	Steel 12
+144 155 151	Steel 13
+154 165 161	Steel 14
+164 175 171	Steel 15
+ 13  11  10	Soot black 1
+ 23  20  19	Soot black 2
+ 33  30  28	Soot black 3
+ 43  40  37	Soot black 4
+ 54  50  47	Soot black 5
+ 76  39  26	Rust 1
+ 88  48  32	Rust 2
+ 99  58  38	Rust 3
+110  68  44	Rust 4
+121  79  51	Rust 5
+133  91  58	Rust 6
+112  84  43	Brass 1
+125  97  50	Brass 2
+137 109  58	Brass 3
+149 122  67	Brass 4
+162 136  76	Brass 5
+174 149  86	Brass 6
+187 163  96	Brass 7
+199 178 107	Brass 8
+ 94  10   5	Fire 1
+126  21   7	Fire 2
+159  35   9	Fire 3
+194  52  12	Fire 4
+219  77  14	Fire 5
+238 105  20	Fire 6
+249 138  31	Fire 7
+252 173  50	Fire 8
+254 204  86	Fire 9
+255 232 138	Fire 10
