@@ -41,6 +41,8 @@ public class DeferredRegistry {
                         props -> props.strength(3.5f).requiresCorrectToolForDrops());
         public static final DeferredBlock<Block> BLAST_BRICKS = BLOCKS.registerBlock("blast_bricks", Block::new,
                         props -> props.strength(3.5f).requiresCorrectToolForDrops());
+        public static final DeferredBlock<Block> FURNACE_STACK = BLOCKS.registerBlock("furnace_stack", Block::new,
+                        props -> props.strength(3.5f).requiresCorrectToolForDrops());
         // ponytail: vanilla GlazedTerracottaBlock = plain block facing the placer; swap for a real class when the
         // controller gets a block entity.
         public static final DeferredBlock<Block> BLAST_FURNACE_CONTROLLER = BLOCKS.registerBlock(
@@ -64,6 +66,7 @@ public class DeferredRegistry {
 
         public static final DeferredItem<BlockItem> KILN_ITEM = ITEMS.registerSimpleBlockItem(KILN);
         public static final DeferredItem<BlockItem> BLAST_BRICKS_ITEM = ITEMS.registerSimpleBlockItem(BLAST_BRICKS);
+        public static final DeferredItem<BlockItem> FURNACE_STACK_ITEM = ITEMS.registerSimpleBlockItem(FURNACE_STACK);
         public static final DeferredItem<BlockItem> BLAST_FURNACE_CONTROLLER_ITEM = ITEMS
                         .registerSimpleBlockItem(BLAST_FURNACE_CONTROLLER);
         public static final DeferredItem<Item> STEEL_INGOT_ITEM = ITEMS.registerSimpleItem("steel_ingot",

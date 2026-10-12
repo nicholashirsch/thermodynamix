@@ -6,6 +6,7 @@
   "block.thermodynamix.kiln": "Kiln",
   "block.thermodynamix.blast_bricks": "Blast Bricks",
   "block.thermodynamix.blast_furnace_controller": "Blast Furnace Controller",
+  "block.thermodynamix.furnace_stack": "Furnace Stack",
   "item.thermodynamix.steel_ingot": "Steel Ingot",
   "item.thermodynamix.blister_steel_ingot": "Blister Steel Ingot",
   "item.thermodynamix.cast_iron_ingot": "Cast Iron Ingot"

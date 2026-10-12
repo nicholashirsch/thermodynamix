@@ -1,0 +1,69 @@
+GIMP Palette
+Name: Rusted steel
+Columns: 15
+#
+ 30  32  31	Steel 1
+ 40  42  41	Steel 2
+ 50  52  51	Steel 3
+ 59  63  61	Steel 4
+ 68  73  71	Steel 5
+ 78  83  81	Steel 6
+ 87  93  91	Steel 7
+ 97 104 101	Steel 8
+106 114 111	Steel 9
+116 124 121	Steel 10
+125 134 131	Steel 11
+135 144 141	Steel 12
+144 155 151	Steel 13
+154 165 161	Steel 14
+164 175 171	Steel 15
+ 34  28  26	Stained steel 1
+ 44  36  34	Stained steel 2
+ 55  44  42	Stained steel 3
+ 64  55  50	Stained steel 4
+ 74  65  60	Stained steel 5
+ 84  74  68	Stained steel 6
+ 94  82  74	Stained steel 7
+104  90  82	Stained steel 8
+114 100  92	Stained steel 9
+124 110 100	Stained steel 10
+134 120 110	Stained steel 11
+144 130 120	Stained steel 12
+153 140 128	Stained steel 13
+164 150 136	Stained steel 14
+174 160 144	Stained steel 15
+ 39  24  21	Rust brown 1
+ 49  31  26	Rust brown 2
+ 60  37  32	Rust brown 3
+ 70  47  40	Rust brown 4
+ 80  57  48	Rust brown 5
+ 90  64  54	Rust brown 6
+101  70  58	Rust brown 7
+111  77  63	Rust brown 8
+121  86  72	Rust brown 9
+132  96  80	Rust brown 10
+142 106  90	Rust brown 11
+152 117  98	Rust brown 12
+162 126 104	Rust brown 13
+173 135 110	Rust brown 14
+183 144 116	Rust brown 15
+ 46  18  11	Rust orange 1
+ 59  24  16	Rust orange 2
+ 72  31  21	Rust orange 3
+ 84  35  23	Rust orange 4
+ 97  38  24	Rust orange 5
+110  44  25	Rust orange 6
+123  52  28	Rust orange 7
+135  60  30	Rust orange 8
+148  70  35	Rust orange 9
+161  80  39	Rust orange 10
+174  90  45	Rust orange 11
+186 101  50	Rust orange 12
+199 114  59	Rust orange 13
+212 127  69	Rust orange 14
+  4   5   5	Void 1
+  8   9   9	Void 2
+ 11  13  12	Void 3
+ 15  17  16	Void 4
+ 19  20  20	Void 5
+ 23  24  24	Void 6

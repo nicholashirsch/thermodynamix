@@ -1,3 +1,3 @@
 {
-  "values": ["thermodynamix:blast_bricks", "thermodynamix:blast_furnace_controller"]
+  "values": ["thermodynamix:blast_bricks", "thermodynamix:blast_furnace_controller", "thermodynamix:furnace_stack"]
 }
